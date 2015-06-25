@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/bookbackground2"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/contentView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lianhua_1"
+        android:paddingTop="15dp" />
+
+    <TextView
+        android:id="@+id/contentTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="八十八佛大忏悔文"
+        android:gravity="center|center_horizontal"
+        android:layout_below="@+id/contentView"
+        android:layout_alignStart="@+id/contentView"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/contentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="大慈大悲愍众生，大喜大舍济含识，\n相好光明以自严，众等至心皈命礼。
+        \n\n南无皈依十方尽虚空界一切诸佛\n南无皈依十方尽虚空界一切尊法\n南无皈依十方尽虚空界一切贤圣僧
+        \n\n南无如来、应供、正遍知、明行足、善逝世间解、无上士、调御丈夫、天人师、佛、世尊
+        \n南无普光佛、
+        \n南无普明佛、
+        \n南无普净佛、
+        \n南无多摩罗跋栴檀香佛、
+        \n南无栴檀光佛、(旃檀 zhān tán)
+        \n南无摩尼幢佛、
+        \n南无欢喜藏摩尼宝积佛、
+        \n南无一切世间乐见上大精进佛、
+        \n南无摩尼幢灯光佛、
+        \n南无慧炬照佛、
+        \n南无海德光明佛、
+        \n南无金刚牢强普散金光佛、
+        \n南无大强精进勇猛佛、
+        \n南无大悲光佛、
+        \n南无慈力王佛、
+        \n南无慈藏佛、
+        \n南无栴檀窟庄严胜佛、
+        \n南无贤善首佛、
+        \n南无善意佛、
+        \n南无广庄严王佛、
+        \n南无金华光佛、（华huā，通花）
+        \n南无宝盖照空自在力王佛、
+        \n南无虚空宝华光佛、
+        \n南无琉璃庄严王佛、
+        \n南无普现色身光佛、
+        \n南无不动智光佛、
+        \n南无降伏众魔王佛、
+        \n南无才光明佛、
+        \n南无智慧胜佛、
+        \n南无弥勒仙光佛、
+        \n南无善寂月音妙尊智王佛、
+        \n南无世净光佛、
+        \n南无龙种上尊王佛、
+        \n南无日月光佛、
+        \n南无日月珠光佛、
+        \n南无慧幢胜王佛、
+        \n南无狮子吼自在力王佛、
+        \n南无妙音胜佛、
+        \n南无常光幢佛、
+        \n南无观世灯佛、
+        \n南无慧威灯王佛、
+        \n南无法胜王佛、
+        \n南无须弥光佛、
+        \n南无须曼那华光佛、(那nuó)
+        \n南无优昙钵罗华殊胜王佛、(昙tán)
+        \n南无大慧力王佛、
+        \n南无阿閦毘欢喜光佛、(閦chù)
+        \n南无无量音声王佛、
+        \n南无才光佛、
+        \n南无金海光佛、
+        \n南无山海慧自在通王佛、
+        \n南无大通光佛、
+        \n南无一切法常满王佛、
+        \n南无释迦牟尼佛、
+        \n南无金刚不坏佛、
+        \n南无宝光佛、
+        \n南无龙尊王佛、
+        \n南无精进军佛、
+        \n南无精进喜佛、
+        \n南无宝火佛、
+        \n南无宝月光佛、
+        \n南无现无愚佛、
+        \n南无宝月佛、
+        \n南无无垢佛、
+        \n南无离垢佛、
+        \n南无勇施佛、
+        \n南无清净佛、
+        \n南无清净施佛、
+        \n南无娑留那佛、 (那nuó)
+        \n南无水天佛、
+        \n南无坚德佛、
+        \n南无栴檀功德佛、
+        \n南无无量掬光佛、
+        \n南无光德佛、
+        \n南无无忧德佛、
+        \n南无那罗延佛、 (那nuó)
+        \n南无功德华佛、
+        \n南无莲华光游戏神通佛、
+        \n南无财功德佛、
+        \n南无德念佛、
+        \n南无善名称功德佛、
+        \n南无红燄帝幢王佛、
+        \n南无善游步功德佛、
+        \n南无斗战胜佛、
+        \n南无善游步佛、
+        \n南无周匝庄严功德佛、(匝zā)
+        \n南无宝华游步佛、
+        \n南无宝莲华善住娑罗树王佛、
+        \n南无法界藏身阿弥陀佛、\n
+        \n如是等一切世界，诸佛世尊，常住在世。是诸世尊，当慈念我。
+        \n若我此生，若我前生，从无始生死以来，所做众罪。若自作，若教他作，见作随喜。若塔若僧，若四方僧物。若自取，若教他取，见取随喜。五无间罪，若自作，若教他作，见作随喜。十不善道，若自作，若教他作，见作随喜。所作罪障，或有覆藏，或不覆藏。应堕地狱，饿鬼畜生，诸余恶趣，边地下贱，及蔑戾车，如是等处。所作罪障，今皆忏悔。\n
+        \n今诸佛世尊，当证知我，当忆念我。我复于诸佛世尊前，作如是言：若我此生，若我余生。曾行布施或守净戒，乃至施与畜生一抟之食。或修净行，所有善根，成就众生；所有善根，修行菩提；所有善根，及无上智；所有善根，一切合集，校计筹量。皆悉回向，阿耨多罗三藐三菩提，如过去未来，现在诸佛，所作回向，我亦如是回向。众罪皆忏悔，诸福尽随喜。及请佛功德，愿成无上智。去来现在佛，于众生最胜。无量功德海，我今皈命礼。\n
+        \n所有十方世界中，三世一切人师子，我以清净身语意，一切遍礼尽无余。
+        \n普贤行愿威神力，普现一切如来前，一身复现刹尘身，一一遍礼刹尘佛。
+        \n於一尘中尘数佛，各处菩萨众会中，无尽法界尘亦然，深信诸佛皆充满。
+        \n各以一切音声海，普出无尽妙言辞，尽于未来一切劫，赞佛甚深功德海。
+        \n以诸最胜妙华鬘，(鬘mán) 伎乐涂香及伞盖，如是最胜庄严具，我以供养诸如来。
+        \n最胜衣服最胜香，末香烧香与灯烛，一一皆如妙高聚，我悉供养诸如来。
+        \n我以广大胜解心，深信一切三世佛，悉以普贤行愿力，普遍供养诸如来。
+        \n我昔所造诸恶业，皆由无始贪嗔痴，从身语意之所生，一切我今皆忏悔。
+        \n十方一切诸众生，二乘有学及无学，一切如来与菩萨，所有功德皆随喜。
+        \n十方所有世间灯，最初成就菩提者，我今一切皆劝请，转于无上妙法轮。
+        \n诸佛若欲示涅盘，我悉至诚而劝请，唯愿久住刹尘劫，利乐一切诸众生。
+        \n所有礼赞供养福，请佛住世转法轮，随喜忏悔诸善根，回向众生及佛道。
+        \n愿将以此胜功德，回向无上真法界，性相佛法及僧伽，二谛融通三昧印。
+        \n如是无量功德海，我今皆悉尽回向，所有众生身口意，见惑弹谤我法等。
+        \n如是一切诸业障，悉皆消灭尽无余，念念智周于法界，广度众生皆不退。
+        \n乃至虚空世界尽，众生及业烦恼尽，如是四法广无边，愿今回向亦如是。\n
+        \n南无大行普贤菩萨(三称)\n"
+        android:textSize="17sp"
+        android:layout_below="@+id/contentTextTitle"
+        android:layout_alignStart="@+id/contentTextTitle"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="10dp" />
+
+</RelativeLayout>
