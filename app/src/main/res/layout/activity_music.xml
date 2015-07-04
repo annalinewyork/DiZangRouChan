@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_music_page"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mainImage"
-        android:src="@drawable/amtf_1"
+        android:src="@drawable/amtf"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"/>
+        android:layout_above="@+id/progressBar"
+        android:layout_alignParentEnd="true" />
 
     <ImageButton
         android:layout_width="80dp"
         android:layout_height="50dp"
         android:id="@+id/buttonStart"
         android:src="@drawable/media_play2_selector"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
         android:layout_marginLeft="15dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/bookbackground2"
-        android:baselineAlignBottom="true" />
+        android:baselineAlignBottom="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/progressBar" />
 
     <ImageButton
         android:layout_width="80dp"
@@ -29,9 +30,8 @@
         android:id="@+id/buttonLoop"
         android:src="@drawable/media_loop2"
         android:layout_marginRight="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp" />
+        android:layout_alignTop="@+id/buttonStart"
+        android:layout_alignEnd="@+id/progressBar" />
 
     <ProgressBar
         style="?android:attr/progressBarStyleHorizontal"

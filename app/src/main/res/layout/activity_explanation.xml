@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="经文功德"
+        android:text="关于程式"
         android:gravity="center|center_horizontal"
         android:layout_below="@+id/explanationView"
         android:layout_alignStart="@+id/explanationView"
@@ -31,9 +31,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="取相忏中，至诚礼拜八十八佛，最为殊胜，最为简便，亦最常用，极易感应，得见瑞相，身心轻安，足以证明，罪灭障除，堪可进功，修行办道。是故古德大善知识，将之列入早晚课诵。\n\n从普光佛到一切法常满王佛，这五十三尊佛号，出在《佛说观药王药上二菩萨经》中。经云：若人闻此五十三佛功德名号，百千万亿阿僧祇劫，不堕恶道；若能称诵，世世见佛；若复有人，恭敬礼拜五十三佛，彼之所有五逆十恶、四重八弃，种种重罪，一齐消灭。过去千佛，现在千佛，未来千佛，皆因称诵，恭敬礼拜五十三佛，而早成佛。
+        android:text="1. 经文功德\n
+        \n取相忏中，至诚礼拜八十八佛，最为殊胜，最为简便，亦最常用，极易感应，得见瑞相，身心轻安，足以证明，罪灭障除，堪可进功，修行办道。是故古德大善知识，将之列入早晚课诵。\n\n从普光佛到一切法常满王佛，这五十三尊佛号，出在《佛说观药王药上二菩萨经》中。经云：若人闻此五十三佛功德名号，百千万亿阿僧祇劫，不堕恶道；若能称诵，世世见佛；若复有人，恭敬礼拜五十三佛，彼之所有五逆十恶、四重八弃，种种重罪，一齐消灭。过去千佛，现在千佛，未来千佛，皆因称诵，恭敬礼拜五十三佛，而早成佛。
         \n\n从释迦牟尼佛到宝莲华善住娑罗树王佛，三十五佛功德名号，出自《佛说决定毗尼经》。《宝积经》云：一切众生，若有身具五逆十恶重罪之者，万劫千生不通忏悔，应须顶礼三十五佛，至心忏悔，一切罪障，皆得除灭。
-        \n\n由此可见，称念礼拜八十八佛，功德威神不可思议，能除一切极恶重罪。是故我等末世行人，不论罪障迷惑，若轻若重，悉应至诚，恭敬礼拜八十八佛功德名号。亦如过去现在未来三千诸佛，早得成佛。\n"
+        \n\n由此可见，称念礼拜八十八佛，功德威神不可思议，能除一切极恶重罪。是故我等末世行人，不论罪障迷惑，若轻若重，悉应至诚，恭敬礼拜八十八佛功德名号。亦如过去现在未来三千诸佛，早得成佛。\n
+        \n 2.法宝来源\n
+        \n音乐：https://www.youtube.com/watch?v=1BsyX4TTJg4 (若有版权问题请立即联系我，我将立即停止播放八十八佛大忏悔文音乐。如因此给您造成损失，请您谅解。)
+        \nAPP Icon: 选自净空法师墨宝\n
+        \n3.特别感谢\n
+        \n顶礼、感恩一切菩萨、同修给予的帮助，阿弥陀佛。\n
+        \n感谢纽约C4Q(Coalition for Queens)
+        \n感谢Sultan Keshwani先生"
         android:textSize="17sp"
         android:layout_below="@+id/explanationTextTitle"
         android:layout_alignStart="@+id/explanationTextTitle"

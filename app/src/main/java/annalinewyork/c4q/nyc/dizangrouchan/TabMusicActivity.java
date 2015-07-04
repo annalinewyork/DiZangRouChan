@@ -88,7 +88,6 @@ public class TabMusicActivity extends Activity {
 
     private void process (){
         progressBar.setProgress(0);
-
         progress = 0;
 
         new Thread(new Runnable() {

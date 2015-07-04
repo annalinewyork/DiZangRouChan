@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context=".MainActivity"
     android:id="@+id/bashibafo"
-    android:background="@drawable/bookbackground2">
+    android:background="@drawable/background_music_page">
 
     <TabHost
         android:layout_width="fill_parent"
@@ -32,11 +32,7 @@
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
                     android:paddingTop="15dp">
-
-                    
-
-
-
+s
                 </RelativeLayout>
 
                 <RelativeLayout
