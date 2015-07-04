@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context=".MainActivity"
     android:id="@+id/bashibafo"
-    android:background="@drawable/bookbackground5">
+    android:background="@drawable/bookbackground2">
 
     <TabHost
         android:layout_width="fill_parent"

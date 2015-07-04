@@ -15,12 +15,12 @@
         android:layout_width="80dp"
         android:layout_height="50dp"
         android:id="@+id/buttonStart"
-        android:src="@drawable/media_play2"
+        android:src="@drawable/media_play2_selector"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="15dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/bookbackground5"
+        android:background="@drawable/bookbackground2"
         android:baselineAlignBottom="true" />
 
     <ImageButton
@@ -31,16 +31,6 @@
         android:layout_marginRight="10dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp" />
-
-    <ImageButton
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:id="@+id/buttonStop"
-        android:src="@drawable/media_stop2"
-        android:layout_marginRight="10dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
         android:layout_marginBottom="10dp" />
 
     <ProgressBar

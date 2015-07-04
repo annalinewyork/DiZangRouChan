@@ -5,7 +5,7 @@ android {
     buildToolsVersion "22.0.1"
 
     defaultConfig {
-        applicationId "annalinewyork.c4q.nyc.dizangrouchan"
+        applicationId "annalinewyork.c4q.nyc.BaShiBaFo"
         minSdkVersion 17
         targetSdkVersion 22
         versionCode 1
