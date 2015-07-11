@@ -14,7 +14,6 @@ public class SplashActivity extends Activity {
 
     Handler handler;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

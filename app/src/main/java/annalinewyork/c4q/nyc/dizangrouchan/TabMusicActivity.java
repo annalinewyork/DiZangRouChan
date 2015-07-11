@@ -17,117 +17,72 @@ import java.util.logging.LogRecord;
 public class TabMusicActivity extends Activity {
     MediaPlayer mediaPlayer;
     private boolean playing = false;
+    private boolean looping = false;
 
-    private ProgressBar progressBar;
+
     private Handler handler = new Handler();
-    int progress = 0;
+
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
 
-        final ImageButton buttonStart = (ImageButton)findViewById(R.id.buttonStart);
-
-        progressBar = (ProgressBar)findViewById(R.id.progressBar);
-
+        final ImageButton buttonStart = (ImageButton) findViewById(R.id.playButton);
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-
-
                 if (!playing) {
                     playing = true;
-                    buttonStart.setImageResource(R.drawable.media_stop2);
-                    Uri path = Uri.parse("android.resource://"+getPackageName()+"/"+ R.raw.bashibafo);
+                    buttonStart.setImageResource(R.drawable.button_stop);
+                    Uri path = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.bashibafo);
 
                     if (mediaPlayer == null) {
                         mediaPlayer = MediaPlayer.create(TabMusicActivity.this, path);
                     }
                     if (mediaPlayer != null) {
                         mediaPlayer.start();
-                        process();
-                    }
-                }
-                else {
-                    playing = false;
-                    buttonStart.setImageResource(R.drawable.media_play2);
 
-                    if(mediaPlayer.isPlaying()){
+                    }
+                } else {
+                    playing = false;
+                    buttonStart.setImageResource(R.drawable.button_play);
+
+                    if (mediaPlayer.isPlaying()) {
                         mediaPlayer.pause();
 
                     }
                 }
-
             }
         });
 
-//        ImageButton buttonStop = (ImageButton)findViewById(R.id.buttonStop);
-//        buttonStop.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if(mediaPlayer.isPlaying()){
-//                    mediaPlayer.pause();
-//                   // mediaPlayer.release();
-//                }else{
-//                    mediaPlayer.start();
-//                }
-//            }
-//        });
 
-        ImageButton buttonLoop = (ImageButton)findViewById(R.id.buttonLoop);
+        final ImageButton buttonLoop = (ImageButton) findViewById(R.id.loopButton);
         buttonLoop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mediaPlayer.setLooping(true);
+               // mediaPlayer.setLooping(true);
+
+                if (!looping){
+                    looping = true;
+                    buttonLoop.setImageResource(R.drawable.button_loop_pressed);
+                    mediaPlayer.setLooping(true);
+                }
+                else {
+                    looping = false;
+                    buttonLoop.setImageResource(R.drawable.button_loop_default);
+                    mediaPlayer.setLooping(false);
+                }
             }
         });
     }
 
-    private void process (){
-        progressBar.setProgress(0);
-        progress = 0;
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                while (progress < 100){
-                    progress = doWork();
-                    try{
-                        Thread.sleep(3000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-                    handler.post( new Runnable() {
-                        @Override
-                        public void run() {
-                            progressBar.setProgress(progress);
-                        }
-                    });
-                }
-            }
-        }).start();
-    }
-
-    private int doWork(){
-        progress++;
-        if (progress < 100){
-            return progress;
-        }
-
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return 100;
-    }
 
     @Override
     protected void onDestroy() {
-        if(mediaPlayer!=null && mediaPlayer.isPlaying()){
+        if (mediaPlayer != null && mediaPlayer.isPlaying()) {
             mediaPlayer.stop();
             mediaPlayer.release();
             mediaPlayer = null;
