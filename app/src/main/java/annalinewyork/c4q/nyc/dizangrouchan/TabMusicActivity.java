@@ -63,22 +63,23 @@ public class TabMusicActivity extends Activity {
         buttonLoop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // mediaPlayer.setLooping(true);
+                // mediaPlayer.setLooping(true);
 
-                if (!looping){
-                    looping = true;
-                    buttonLoop.setImageResource(R.drawable.button_loop_pressed);
-                    mediaPlayer.setLooping(true);
+                if (playing) {
+                    if (!looping) {
+                        looping = true;
+                        buttonLoop.setImageResource(R.drawable.button_loop_pressed);
+                        mediaPlayer.setLooping(true);
+                    } else {
+                        looping = false;
+                        buttonLoop.setImageResource(R.drawable.button_loop_default);
+                        mediaPlayer.setLooping(false);
+                    }
                 }
-                else {
-                    looping = false;
-                    buttonLoop.setImageResource(R.drawable.button_loop_default);
-                    mediaPlayer.setLooping(false);
-                }
+
             }
         });
     }
-
 
     @Override
     protected void onDestroy() {

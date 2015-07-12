@@ -6,15 +6,15 @@ android {
 
     defaultConfig {
         applicationId "annalinewyork.c4q.nyc.BaShiBaFo"
-        minSdkVersion 17
+        minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }

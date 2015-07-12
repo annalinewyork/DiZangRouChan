@@ -39,7 +39,7 @@ public class MainActivity extends TabActivity {
 
         TabHost.TabSpec spec3 = tabHost.newTabSpec("tabExplanation");
         spec3.setContent(new Intent(this, TabExplanationActivity.class));
-        spec3.setIndicator("关 于");
+        spec3.setIndicator("缘 起");
         tabHost.addTab(spec3);
     }
 }

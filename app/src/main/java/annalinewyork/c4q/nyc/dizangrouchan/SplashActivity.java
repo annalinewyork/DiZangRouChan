@@ -4,12 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
 import java.util.logging.LogRecord;
 
-/**
- * Created by c4q-nali on 6/26/15.
- */
+
 public class SplashActivity extends Activity {
 
     Handler handler;
@@ -26,14 +23,13 @@ public class SplashActivity extends Activity {
         };
 
 
-
-      handler = new Handler();
-        handler.postDelayed(startMainMethodRunnale, 3000);
+        handler = new Handler();
+        handler.postDelayed(startMainMethodRunnale, 2000);
 
     }
 
     protected void startMain() {
-        Intent mainIntent = new Intent(this,MainActivity.class);
+        Intent mainIntent = new Intent(this, MainActivity.class);
         startActivity(mainIntent);
 
     }
