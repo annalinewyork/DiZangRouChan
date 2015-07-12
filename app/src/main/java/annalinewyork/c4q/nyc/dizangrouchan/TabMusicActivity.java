@@ -19,9 +19,7 @@ public class TabMusicActivity extends Activity {
     private boolean playing = false;
     private boolean looping = false;
 
-
     private Handler handler = new Handler();
-
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -29,7 +27,11 @@ public class TabMusicActivity extends Activity {
         setContentView(R.layout.activity_music);
 
         final ImageButton buttonStart = (ImageButton) findViewById(R.id.playButton);
+        Uri path = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.bashibafo);
 
+        if (mediaPlayer == null) {
+            mediaPlayer = MediaPlayer.create(TabMusicActivity.this, path);
+        }
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,11 +39,7 @@ public class TabMusicActivity extends Activity {
                 if (!playing) {
                     playing = true;
                     buttonStart.setImageResource(R.drawable.button_stop);
-                    Uri path = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.bashibafo);
 
-                    if (mediaPlayer == null) {
-                        mediaPlayer = MediaPlayer.create(TabMusicActivity.this, path);
-                    }
                     if (mediaPlayer != null) {
                         mediaPlayer.start();
 
@@ -63,21 +61,18 @@ public class TabMusicActivity extends Activity {
         buttonLoop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // mediaPlayer.setLooping(true);
 
-                if (playing) {
-                    if (!looping) {
-                        looping = true;
-                        buttonLoop.setImageResource(R.drawable.button_loop_pressed);
-                        mediaPlayer.setLooping(true);
-                    } else {
-                        looping = false;
-                        buttonLoop.setImageResource(R.drawable.button_loop_default);
-                        mediaPlayer.setLooping(false);
-                    }
+                if (!looping) {
+                    looping = true;
+                    buttonLoop.setImageResource(R.drawable.button_loop_pressed);
+                    mediaPlayer.setLooping(true);
+                } else {
+                    looping = false;
+                    buttonLoop.setImageResource(R.drawable.button_loop_default);
+                    mediaPlayer.setLooping(false);
                 }
-
             }
+
         });
     }
 
