@@ -1,13 +1,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context=".MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/bashibafo"
-    android:background="@drawable/background_music_page">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_music_page"
+    tools:context=".MainActivity">
 
     <TabHost
+        android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@android:id/tabhost"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true">
 
@@ -32,7 +34,7 @@
                     android:layout_height="fill_parent"
                     android:orientation="vertical"
                     android:paddingTop="15dp">
-s
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -41,7 +43,7 @@ s
                     android:layout_height="fill_parent"
                     android:orientation="vertical">
 
-                    </RelativeLayout>
+                </RelativeLayout>
 
                 <RelativeLayout
                     android:id="@+id/tab3"

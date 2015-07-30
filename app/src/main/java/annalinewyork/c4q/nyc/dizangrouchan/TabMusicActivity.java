@@ -32,6 +32,7 @@ public class TabMusicActivity extends Activity {
         if (mediaPlayer == null) {
             mediaPlayer = MediaPlayer.create(TabMusicActivity.this, path);
         }
+
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

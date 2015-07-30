@@ -6,19 +6,16 @@
     android:orientation="vertical"
     android:background="@drawable/background_music_page">
 
-
-
-
     <ImageView
         android:id="@+id/mainImage"
         android:layout_weight="1"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_height="0dp"
         android:paddingTop="25dp"
-        android:src="@drawable/amtf" />
+        android:src="@drawable/amtf"
+        android:contentDescription="@string/main_image" />
 
-    <LinearLayout
+        <LinearLayout
         android:id="@+id/buttonsWrap"
         android:orientation="horizontal"
         android:layout_width="fill_parent"
@@ -31,7 +28,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/button_play"
         android:layout_marginBottom="15dp"
-        android:layout_alignParentBottom="true"/>
+            android:contentDescription="@string/play_button" />
 
         <ImageButton
         android:layout_width="wrap_content"
@@ -39,7 +36,7 @@
         android:id="@+id/loopButton"
         android:layout_marginBottom="15dp"
         android:src="@drawable/button_loop_default"
-        android:layout_alignParentBottom="true"/>
+            android:contentDescription="@string/loop_button" />
 
         </LinearLayout>
 
