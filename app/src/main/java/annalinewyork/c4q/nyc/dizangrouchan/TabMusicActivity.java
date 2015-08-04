@@ -1,25 +1,16 @@
 package annalinewyork.c4q.nyc.dizangrouchan;
 
 import android.app.Activity;
-import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ProgressBar;
-
-
-import java.util.logging.LogRecord;
 
 public class TabMusicActivity extends Activity {
     MediaPlayer mediaPlayer;
     private boolean playing = false;
     private boolean looping = false;
-
-    private Handler handler = new Handler();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,21 +30,27 @@ public class TabMusicActivity extends Activity {
 
                 if (!playing) {
                     playing = true;
-                    buttonStart.setImageResource(R.drawable.button_stop);
+                    buttonStart.setImageResource(R.drawable.btn_pause);
 
                     if (mediaPlayer != null) {
                         mediaPlayer.start();
-
                     }
                 } else {
                     playing = false;
-                    buttonStart.setImageResource(R.drawable.button_play);
+                    buttonStart.setImageResource(R.drawable.btn_play);
 
                     if (mediaPlayer.isPlaying()) {
                         mediaPlayer.pause();
 
                     }
                 }
+            }
+        });
+
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                buttonStart.setImageResource(R.drawable.btn_play);
             }
         });
 
@@ -65,11 +62,11 @@ public class TabMusicActivity extends Activity {
 
                 if (!looping) {
                     looping = true;
-                    buttonLoop.setImageResource(R.drawable.button_loop_pressed);
+                    buttonLoop.setImageResource(R.drawable.btn_loop_run_pressed);
                     mediaPlayer.setLooping(true);
                 } else {
                     looping = false;
-                    buttonLoop.setImageResource(R.drawable.button_loop_default);
+                    buttonLoop.setImageResource(R.drawable.btn_loop_run_defult);
                     mediaPlayer.setLooping(false);
                 }
             }

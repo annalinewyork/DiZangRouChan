@@ -22,7 +22,6 @@ public class SplashActivity extends Activity {
             }
         };
 
-
         handler = new Handler();
         handler.postDelayed(startMainMethodRunnale, 2000);
 
