@@ -29,12 +29,12 @@ public class MainActivity extends TabActivity {
 
         TabHost.TabSpec spec1 = tabHost.newTabSpec("tabMusic");
         spec1.setContent(new Intent(this, TabMusicActivity.class));
-        spec1.setIndicator("音 樂");
+        spec1.setIndicator("音 乐");
         tabHost.addTab(spec1);
 
         TabHost.TabSpec spec2 = tabHost.newTabSpec("tabContent");
         spec2.setContent(new Intent(this, TabContentActivity.class));
-        spec2.setIndicator("經 文");
+        spec2.setIndicator("经 文");
         tabHost.addTab(spec2);
 
         TabHost.TabSpec spec3 = tabHost.newTabSpec("tabExplanation");
