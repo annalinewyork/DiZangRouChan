@@ -18,7 +18,7 @@ public class TabMusicActivity extends Activity {
         setContentView(R.layout.activity_music);
 
         final ImageButton buttonStart = (ImageButton) findViewById(R.id.playButton);
-        Uri path = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.bashibafo);
+        Uri path = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.guanyin);
 
         if (mediaPlayer == null) {
             mediaPlayer = MediaPlayer.create(TabMusicActivity.this, path);

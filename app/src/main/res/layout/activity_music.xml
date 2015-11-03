@@ -7,14 +7,18 @@
     android:orientation="vertical"
     android:padding="10dp">
 
-    <ImageView
+    <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/mainImage"
-        android:layout_width="fill_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:contentDescription="@string/main_image"
         android:paddingTop="25dp"
-        android:src="@drawable/amtf" />
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:riv_corner_radius="30dip"
+        app:riv_border_width="2dip"
+        app:riv_border_color="#333333"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/main_image"
+        android:src="@drawable/guan_yin_app_pic" />
 
     <LinearLayout
         android:id="@+id/buttonsWrap"

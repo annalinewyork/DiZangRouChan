@@ -17,24 +17,13 @@
         android:contentDescription="@string/lianhua_logo" />
 
     <TextView
-        android:id="@+id/explanationTextTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/explanation_text_title"
-        android:gravity="center|center_horizontal"
-        android:layout_below="@+id/explanationView"
-        android:layout_alignStart="@+id/explanationView"
-        android:layout_marginTop="20dp"/>
-
-    <TextView
         android:id="@+id/explanationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/explanation_text"
-        android:layout_below="@+id/explanationTextTitle"
-        android:layout_alignStart="@+id/explanationTextTitle"
+        android:layout_below="@+id/explanationView"
         android:layout_marginTop="25dp"
         android:paddingRight="13dp"
         android:paddingLeft="10dp"

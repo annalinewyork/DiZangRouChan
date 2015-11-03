@@ -34,12 +34,12 @@ public class MainActivity extends TabActivity {
 
         TabHost.TabSpec spec2 = tabHost.newTabSpec("tabContent");
         spec2.setContent(new Intent(this, TabContentActivity.class));
-        spec2.setIndicator("经 文");
+        spec2.setIndicator("普门颂");
         tabHost.addTab(spec2);
 
         TabHost.TabSpec spec3 = tabHost.newTabSpec("tabExplanation");
         spec3.setContent(new Intent(this, TabExplanationActivity.class));
-        spec3.setIndicator("功 德");
+        spec3.setIndicator("简 介");
         tabHost.addTab(spec3);
     }
 }
